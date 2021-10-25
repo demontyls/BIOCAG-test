@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOCAD</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <script defer src="script.js" ></script>
+</head>
+<body class="body">
+    <div class="box-content">
+        <div class="box-search">
+            <span class="text-prompt">Enter inventory number, guid or bims id</span>
+            <form class="form-search">
+                <input class="input-search" type="text" placeholder="A-001234">
+                <button class="search-btn">Search</button>
+            </form>
+        </div>
+        <div class="product-info">
+            <div class="item-details">
+                <div class="product-name">
+                    <span class="item-img"></span>
+                    <span  class="item-name">Аналитические весы OHAUS Adventurer АХ324 (B715976163)</span>
+                </div>
+                <form class="form-select">
+                    <div class="select">
+                    <select class="select-month">
+                        <option class="option">1 month</option>
+                        <option class="option">2 month</option>
+                        <option class="option">3 month</option> 
+                    </select>
+                    </div>
+                    <div class="box-chek">
+                        <label class="label">
+                            <input type="checkbox" class="check">
+                            <span class="fake-check"></span>
+                            <span class="check-text">Calibration</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="check">
+                            <span class="fake-check"></span>
+                            <span class="check-text">Measuring</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="check">
+                            <span class="fake-check"></span>
+                            <span class="check-text">Using</span>
+                        </label>
+                    </div>
+                    <button class="btn-report">Generate report</button>
+                </form>
+            </div>    
+                <div class="specifications">
+                    <ul class="specs-list">
+                        <li class="spec-prop">Тип оборудования:<span class="spec-value">Весы</span></li>
+                        <li class="spec-prop">Статус:<span class="spec-value">Готов к работе</span></li>
+                        <li class="spec-prop">Изготовитель:<span class="spec-value">Ohaus</span></li>
+                        <li class="spec-prop">Модель:<span class="spec-value">AX-123</span></li>
+                        <li class="spec-prop">Ответсвенное подразделение (ремон):<span class="spec-value">Группа обслуживания лабораторного оборудования</span></li>
+                        <li class="spec-prop">Эксплуатирующее подразделение:<span class="spec-value">Химико-аналитическая лаборатория 2.0</span></li>
+                        <li class="spec-prop">МОЛ:<span class="spec-value">Иванов Иван Иванович</span></li>
+                        <li class="spec-prop">Территория:<span class="spec-value">г. Санкт-Петербург (Нойдорф)</span></li>
+                        <li class="spec-prop">Серийный номер:<span class="spec-value">B715976163</span></li>
+                        <li class="spec-prop">GULD:<a class="spec-link" href="#">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></li>
+                        <li class="spec-prop">Bims ID:<a class="spec-link" href="#">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></li>
+                        <li class="spec-prop">Tam:<a class="spec-link" href="#">А-001234</a></li>
+                    </ul>
+                </div>           
+        </div>
+        <div class="box-report">
+            <h2 class="heading-report">Calibration report</h2>
+            <div class="repor-table">
+                <div class="table-title row">
+                    <span class="report-prop">Data</span>
+                    <span class="report-prop">Used buffer solutions</span>
+                    <span class="report-prop">Slope, % Norm 95-105</span>
+                    <span class="report-prop">Offset, mV Norm ±(0-20)</span>
+                    <span class="report-prop">User</span>
+                </div>
+                <div class="table-row">
+                    <span class="report-value data">04.10.19 10:23</span>
+                    <ul class="report-list_value">
+                        <li class="spec-report">В 1: № 2000460789536: pH 1. 09</li>
+                        <li class="spec-report">В2: № 2000460789536: pH 2.00</li>
+                        <li class="spec-report">В3: № 2000460789536: pH 4. 01</li>
+                        <li class="spec-report">В4: № 2000460789536: pH 7.00</li>
+                        <li class="spec-report">В5: № 2000460789536: pH 9. 21</li>
+                    </ul>
+                    <span class="report-value check-on">98.7</span>
+                    <span class="report-value check-on">-0.3</span>
+                    <span class="report-value user-name">Иванов Генадий Петрович</span>
+                </div>
+                <div class="table-row">
+                    <span class="report-value data">04.10.19 10:23</span>
+                    <ul class="report-list_value">
+                        <li class="spec-report">В 1: № 2000460789536: pH 1. 09</li>
+                        <li class="spec-report">В2: № 2000460789536: pH 2.00</li>
+                        <li class="spec-report">В3: № 2000460789536: pH 4. 01</li>
+                        <li class="spec-report">В4: № 2000460789536: pH 7.00</li>
+                        <li class="spec-report">В5: № 2000460789536: pH 9. 21</li>
+                    </ul>
+                    <span class="report-value check-on">98.7</span>
+                    <span class="report-value check-on">-0.3</span>
+                    <span class="report-value user-name">Петров Иван Генадьевич</span>
+                </div>
+                <div class="table-row">
+                    <span class="report-value data">04.10.19 10:23</span>
+                    <ul class="report-list_value">
+                        <li class="spec-report">В 1: № 2000460789536: pH 1. 09</li>
+                        <li class="spec-report">В2: № 2000460789536: pH 2.00</li>
+                        <li class="spec-report">В3: № 2000460789536: pH 4. 01</li>
+                        <li class="spec-report">В4: № 2000460789536: pH 7.00</li>
+                        <li class="spec-report">В5: № 2000460789536: pH 9. 21</li>
+                    </ul>
+                    <span class="report-value check-on">98.7</span>
+                    <span class="report-value check-on">-0.3</span>
+                    <span class="report-value user-name">Петров Генадий Иванович</span>
+                </div>
+                <div class="table-row">
+                    <span class="report-value data">04.10.19 10:23</span>
+                    <ul class="report-list_value">
+                        <li class="spec-report">В 1: № 2000460789536: pH 1. 09</li>
+                        <li class="spec-report">В2: № 2000460789536: pH 2.00</li>
+                        <li class="spec-report">В3: № 2000460789536: pH 4. 01</li>
+                        <li class="spec-report">В4: № 2000460789536: pH 7.00</li>
+                        <li class="spec-report">В5: № 2000460789536: pH 9. 21</li>
+                    </ul>
+                    <span class="report-value check-on check-error">90.1</span>
+                    <span class="report-value check-on">-0.5</span>
+                    <span class="report-value user-name">Генадьев Иван Петрович</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
